@@ -1,0 +1,27 @@
+<?php 
+defined('C5_EXECUTE') or die(_("Access Denied."));
+
+class cvjmTemplatePackage extends Package {
+
+     protected $pkgHandle = 'cvjmTemplate';
+     protected $appVersionRequired = '5.3.0';
+     protected $pkgVersion = '1.0';
+
+     public function getPackageDescription() {
+          return t("Template mit CVJM-look.");
+     }
+
+     public function getPackageName() {
+          return t("CVJM Template");
+     }
+     
+     public function install() {
+          $pkg = parent::install();
+     
+          // install block 
+          BlockType::installBlockTypeFromPackage('autonav', $pkg); 
+		  PageTheme::add('cvjm', $pkg);
+     }
+     
+}
+?>
