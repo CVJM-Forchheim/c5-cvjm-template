@@ -1,11 +1,14 @@
 <?php
+namespace Concrete\Package\Cvjmtemplate;
+use Package;
+use PageTheme;
 defined('C5_EXECUTE') or die(_("Access Denied."));
 
-class cvjmTemplatePackage extends Package {
+class Controller extends Package {
 
      protected $pkgHandle = 'cvjmTemplate';
-     protected $appVersionRequired = '5.3.0';
-     protected $pkgVersion = '1.0';
+     protected $appVersionRequired = '5.7.1';
+     protected $pkgVersion = '2.0';
 
      public function getPackageDescription() {
           return t("Template mit CVJM-look.");

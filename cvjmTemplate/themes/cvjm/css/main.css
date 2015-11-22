@@ -31,13 +31,16 @@ body {
 .dropdown-menu li a.active {
     background-color: #ff004d;
 }
-div#main {
+div#main .container {
 	background-color: #ffffff;
     padding: 15px 36px;
 }
-div#bottom {
+div#bottom.container {
     background-color: #2D2D2D;
-    padding: 15px 0;
+    padding: 15px;
+}
+div#bottom.container strong {
+    color: #ffffff;
 }
 footer {
     background-color: #1c1c1c;
