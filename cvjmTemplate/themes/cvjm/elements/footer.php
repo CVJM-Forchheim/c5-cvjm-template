@@ -1,19 +1,19 @@
 <?php defined( 'C5_EXECUTE') or die(_( "Access Denied.")); ?>
 <div id="bottom" class="container">
                 <div class="col-xs-12 col-md-4">
-                <?
+                <?php
                     $a = new GlobalArea('User1');
                     $a->display($c);
                 ?>
                 </div>
                 <div class="col-xs-12 col-md-4">
-                <?
+                <?php
                     $a = new GlobalArea('User2');
                     $a->display($c);
                 ?>
                 </div>
                 <div class="col-xs-12 col-md-4">
-                <?
+                <?php
                     $a = new GlobalArea('User3');
                     $a->display($c);
                 ?>
@@ -41,14 +41,14 @@
                         $userName = $u->getUserName();
                     }
                     ?>
-                    <span class="sign-in"><?=t('You are currently logged in as <strong>%s</strong>', $userName)?>. <?php echo Core::make('helper/navigation')->getLogInOutLink();?></span>
+                    <span class="sign-in"><?=t('You are currently logged in as <strong>%s</strong>', $userName)?>. <?php echo Core:$                
                 <?php   } else { ?>
                     <span class="sign-in"><?php echo Core::make('helper/navigation')->getLogInOutLink();?></span>
                 <?php   } ?>
             </div>
         </div>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-        <? Loader::element( 'footer_required'); ?>
+        <?= Loader::element( 'footer_required'); ?>
     </div>
 </body>
 
