@@ -7,8 +7,8 @@ defined('C5_EXECUTE') or die(_("Access Denied."));
 class Controller extends Package {
 
      protected $pkgHandle = 'cvjmTemplate';
-     protected $appVersionRequired = '8.4.0';
-     protected $pkgVersion = '3.0';
+     protected $appVersionRequired = '5.7.1';
+     protected $pkgVersion = '2.1';
 
      public function getPackageDescription() {
           return t("Template mit CVJM-look.");

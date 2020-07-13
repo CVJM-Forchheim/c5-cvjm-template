@@ -12,6 +12,7 @@
 /* customize_miscellaneous */
 
 body {
+	font-family: 'Source Sans Pro', sans-serif;
     background-color: #414141;
     /*background-image: url("img/CVJM_Dreiecke_Hintergrund.gif");*/
 	background-image: url("../img/header2.jpg");

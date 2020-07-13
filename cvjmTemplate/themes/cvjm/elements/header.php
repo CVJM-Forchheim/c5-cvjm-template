@@ -1,6 +1,6 @@
 <?php defined( 'C5_EXECUTE') or die(_( "Access Denied.")); ?>
 <!DOCTYPE html>
-<html lang="<? Localization::activeLanguage() ?>">
+<html lang="<?= Localization::activeLanguage() ?>">
 
 <head>
     <?= Loader::element( 'header_required'); ?>
@@ -25,8 +25,8 @@
         <div class="navbar navbar-inverse" role="navigation">
             <div class="container">
                 <div class="navbar-header">
-                    <a class="navbar-brand">
-                        <img alt="Titel" src="<?=$view->getThemePath()?>/img/logo.png">
+                    <a class="navbar-brand" href="/">
+                        <img alt="Titel" src="<?=$view->getThemePath()?>/img/logo.png"/>
                     </a>
                     <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
                         <span class="sr-only">Toggle navigation</span>
@@ -45,7 +45,16 @@
                     $nav->controller->displaySubPageLevelsNum = 1;
                     $nav->render('templates/cvjm');
                     ?>
+		    <span id="ccm-account-menu-container"></span>
                 </div>
             </div>
         </div>
         <div id="main" class="light">
+            <div id="banner" class="container">
+                <div class="col-xs-12 col-md-12">
+                <?php
+                    $a = new GlobalArea('Banner');
+                    $a->display($c);
+                ?>
+                </div>
+            </div>

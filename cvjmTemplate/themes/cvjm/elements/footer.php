@@ -41,12 +41,12 @@
                         $userName = $u->getUserName();
                     }
                     ?>
-                    <span class="sign-in"><?=t('You are currently logged in as <strong>%s</strong>', $userName)?>. <?php echo Core:$                
+                    <span class="sign-in"><?=t('You are currently logged in as <strong>%s</strong>', $userName)?>. <?php echo Core::make('helper/navigation')->getLogInOutLink();?></span>
                 <?php   } else { ?>
                     <span class="sign-in"><?php echo Core::make('helper/navigation')->getLogInOutLink();?></span>
                 <?php   } ?>
             </div>
-        </div>
+        </footer>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
         <?= Loader::element( 'footer_required'); ?>
     </div>
