@@ -38,12 +38,14 @@ div#topnav {
 }
 div#breadcrumb {
     background-color: #F4E2D5;
+}
+div#breadcrumb a {
     color: #211E1F;
 }
 div#breadcrumb li.active {
     color: #e40038;
 }
-.breadcrumb {
+div#breadcrumb ol {
     margin-bottom: 0px;
     background-color: transparent;
 }
