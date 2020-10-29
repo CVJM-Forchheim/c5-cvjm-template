@@ -43,6 +43,10 @@ div#breadcrumb {
 div#breadcrumb li.active {
     color: #e40038;
 }
+.breadcrumb {
+    margin-bottom: 0px;
+    background-color: transparent;
+}
 div#main {
 	background-color: #ffffff;
     background-image: url("..img/CVJM_Dreiecke_Hintergrund.gif");
