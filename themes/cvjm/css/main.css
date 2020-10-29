@@ -51,8 +51,10 @@ div#main .container {
 	background-color: #ffffff;
     padding: 15px 36px;
 }
-div#bottom.container {
+div#bottom {
     background-color: #e40038;
+}
+div#bottom.container {
     padding: 15px;
 }
 div#bottom.container strong {
