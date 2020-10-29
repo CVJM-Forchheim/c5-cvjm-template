@@ -13,11 +13,12 @@
 
 body {
 	font-family: 'Source Sans Pro', sans-serif;
-    background-color: #414141;
-    /*background-image: url("img/CVJM_Dreiecke_Hintergrund.gif");*/
-	background-image: url("../img/header2.jpg");
-	background-repeat: no-repeat;
-	background-size: contain;
+    background-color: #ffffff;
+    background-image: url("..img/CVJM_Dreiecke_Hintergrund.gif");
+}
+div#topnav {
+    background-color: #ffffff;
+    box-shadow: 0 3px 3px rgba(0,0,0,0.4);
 }
 .nav li {
     padding: 7px 0;
@@ -32,28 +33,33 @@ body {
 .dropdown-menu li a.active {
     background-color: #ff004d;
 }
+
+div#breadcrumb {
+    background-color: #F4E2D5;
+    color: #211E1F;
+}
+div#breadcrumb li.active {
+    color: #e40038;
+}
+
 div#main .container {
 	background-color: #ffffff;
     padding: 15px 36px;
 }
 div#bottom.container {
-    background-color: #2D2D2D;
+    background-color: #e40038;
     padding: 15px;
 }
 div#bottom.container strong {
     color: #ffffff;
 }
-footer {
+div#footer {
     background-color: #1c1c1c;
     padding: 15px 0;
 }
 
-footer li {
+div#footer li {
     display: inline-block;
-}
-
-div#main ul.nav {
-	background-image: url("img/CVJM_Dreiecke_Hintergrund.gif");
 }
 
 .light {
@@ -103,12 +109,11 @@ div#main ul.nav {
 .dark h4,
 .dark h5,
 .dark h6 {
-    color: #777777;
+    color: #ffffff;
 }
 .dark a:link,
 .dark a:visited {
-    text-decoration: none;
-    color: #ff004d;
+    text-decoration: underline;
 }
 .dark a:hover {
     color: #777777;

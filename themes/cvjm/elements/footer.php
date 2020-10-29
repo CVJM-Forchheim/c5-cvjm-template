@@ -1,27 +1,35 @@
 <?php defined( 'C5_EXECUTE') or die(_( "Access Denied.")); ?>
-<div id="bottom" class="container">
-                <div class="col-xs-12 col-md-4">
-                <?php
-                    $a = new GlobalArea('User1');
-                    $a->display($c);
-                ?>
+        </div>
+        <footer>
+            <div id="bottom" class="container dark">
+                <div class="row">
+                    <?php
+                        $a = new GlobalArea('Social');
+                        $a->display($c);
+                    ?>
                 </div>
-                <div class="col-xs-12 col-md-4">
-                <?php
-                    $a = new GlobalArea('User2');
-                    $a->display($c);
-                ?>
-                </div>
-                <div class="col-xs-12 col-md-4">
-                <?php
-                    $a = new GlobalArea('User3');
-                    $a->display($c);
-                ?>
+                <div class="row">
+                    <div class="col-xs-12 col-md-4">
+                    <?php
+                        $a = new GlobalArea('User1');
+                        $a->display($c);
+                    ?>
+                    </div>
+                    <div class="col-xs-12 col-md-4">
+                    <?php
+                        $a = new GlobalArea('User2');
+                        $a->display($c);
+                    ?>
+                    </div>
+                    <div class="col-xs-12 col-md-4">
+                    <?php
+                        $a = new GlobalArea('User3');
+                        $a->display($c);
+                    ?>
+                    </div>
                 </div>
             </div>
-        </div>
-        <footer class="footer">
-            <div class="container dark">
+            <div id="footer" class="container dark">
                 <span class="powered-by">
                     <?php echo t('Built with <a href="http://www.concrete5.org" class="concrete5">concrete5</a> CMS.')?>
                 </span>
@@ -47,7 +55,7 @@
                 <?php   } ?>
             </div>
         </footer>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+        <script src="<?=$view->getThemePath()?>/js/bootstrap.min.js"></script>
         <?= Loader::element( 'footer_required'); ?>
     </div>
 </body>

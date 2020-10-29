@@ -8,7 +8,7 @@ class Controller extends Package {
 
      protected $pkgHandle = 'cvjmTemplate';
      protected $appVersionRequired = '8.4.0';
-     protected $pkgVersion = '3.1';
+     protected $pkgVersion = '4.0';
 
      public function getPackageDescription() {
           return t("Template mit CVJM-look.");
@@ -21,7 +21,8 @@ class Controller extends Package {
      public function install() {
           $pkg = parent::install();
 
-		  PageTheme::add('cvjm', $pkg);
+          PageTheme::add('cvjm-nav', $pkg);
+          PageTheme::add('cvjm-breadcrumb', $pkg);
      }
 
      public function upgrade(){
