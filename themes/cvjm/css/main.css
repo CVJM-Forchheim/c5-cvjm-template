@@ -53,8 +53,6 @@ div#main .container {
 }
 div#bottom {
     background-color: #e40038;
-}
-div#bottom.container {
     padding: 15px;
 }
 div#bottom.container strong {
@@ -118,6 +116,7 @@ div#footer li {
 }
 .dark a:link,
 .dark a:visited {
+    color: #ffffff;
     text-decoration: underline;
 }
 .dark a:hover {
