@@ -19,6 +19,9 @@ a:link,
 a:visited {
     text-decoration: none;
 }
+header a {
+    color: #211E1F;
+}
 div#topnav {
     background-color: #ffffff;
     box-shadow: 0 3px 3px rgba(0,0,0,0.4);
@@ -42,9 +45,6 @@ div#topnav {
 }
 div#breadcrumb {
     background-color: #F4E2D5;
-}
-div#breadcrumb a {
-    color: #211E1F;
 }
 div#breadcrumb li.active {
     color: #e40038;
