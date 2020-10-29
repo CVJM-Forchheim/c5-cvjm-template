@@ -30,6 +30,9 @@ div#topnav {
     border-radius: 0px;
     margin: 0px;
 }
+.navbar-nav {
+    margin: 7px 0px;
+}
 .navbar-brand img {
     height: 40px;
 }
@@ -45,6 +48,9 @@ div#breadcrumb {
 }
 div#breadcrumb a {
     color: #211E1F;
+}
+div#breadcrumb a:hover {
+    text-decoration: underline;
 }
 div#breadcrumb li.active {
     color: #e40038;
