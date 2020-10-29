@@ -13,8 +13,7 @@
 
 body {
 	font-family: 'Source Sans Pro', sans-serif;
-    background-color: #ffffff;
-    background-image: url("..img/CVJM_Dreiecke_Hintergrund.gif");
+    background-color: #1c1c1c;
 }
 div#topnav {
     background-color: #ffffff;
@@ -33,7 +32,6 @@ div#topnav {
 .dropdown-menu li a.active {
     background-color: #ff004d;
 }
-
 div#breadcrumb {
     background-color: #F4E2D5;
     color: #211E1F;
@@ -41,7 +39,10 @@ div#breadcrumb {
 div#breadcrumb li.active {
     color: #e40038;
 }
-
+div#main {
+	background-color: #ffffff;
+    background-image: url("..img/CVJM_Dreiecke_Hintergrund.gif");
+}
 div#main .container {
 	background-color: #ffffff;
     padding: 15px 36px;
@@ -57,11 +58,9 @@ div#footer {
     background-color: #1c1c1c;
     padding: 15px 0;
 }
-
 div#footer li {
     display: inline-block;
 }
-
 .light {
     color: #777777;
 }
