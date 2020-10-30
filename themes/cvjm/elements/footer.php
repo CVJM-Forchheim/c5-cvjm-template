@@ -1,7 +1,7 @@
 <?php defined( 'C5_EXECUTE') or die(_( "Access Denied.")); ?>
         </div>
         <div id="bottom">
-            <div class="container dark">
+            <div class="container dark hidden-print">
                 <div class="row">
                     <?php
                         $a = new GlobalArea('Social');
@@ -30,7 +30,7 @@
                 </div>
             </div>
         </div>
-        <div id="footer" class="container dark">
+        <div id="footer" class="container dark hidden-print">
             <span class="powered-by">
                 <?php echo t('Built with <a href="http://www.concrete5.org" class="concrete5">concrete5</a> CMS.')?>
             </span>
