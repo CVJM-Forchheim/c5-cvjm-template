@@ -136,7 +136,7 @@ foreach ($navItems as $ni) {
 		}
 	}
 
-	if ($ni->hasSubmenu && $ni->level == 0) {
+	if ($ni->hasSubmenu && $ni->level == 1) {
 		echo '<ul class="dropdown-menu" role="menu">'; //opens a dropdown sub-menu
 	} else {
 		echo '</li>'; //closes a nav item
