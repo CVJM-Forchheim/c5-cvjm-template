@@ -43,7 +43,7 @@
                         $nav->controller->displayPages = 'top';
                         $nav->controller->displaySubPages = 'all';
                         $nav->controller->displaySubPageLevels = 'custom';
-                        $nav->controller->displaySubPageLevelsNum = 2;
+                        $nav->controller->displaySubPageLevelsNum = 1;
                         $nav->render('templates/cvjm-nav');
                         ?>
                         <span id="ccm-account-menu-container"></span>
