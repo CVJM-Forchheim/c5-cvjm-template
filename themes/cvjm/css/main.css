@@ -30,6 +30,9 @@ nav {
     border-radius: 0px;
     margin: 0px;
 }
+.navbar .icon-bar {
+    background-color: #000000;
+}
 .navbar-nav {
     margin: 7px 0px;
 }
