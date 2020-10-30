@@ -23,7 +23,7 @@
 <body id="backpage">
     <div class="<?=$c->getPageWrapperClass()?>">
         <header>
-            <div id="topnav" class="navbar navbar-static-top" role="navigation">
+            <nav id="topnav" class="navbar navbar-static-top" role="navigation">
                 <div class="container">
                     <div class="navbar-header">
                         <a class="navbar-brand" href="/">
@@ -49,7 +49,7 @@
                         <span id="ccm-account-menu-container"></span>
                     </div>
                 </div>
-            </div>
+            </nav>
             <div id="breadcrumb" class="light">
                 <div class="container">
                     <?php
