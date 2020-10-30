@@ -23,7 +23,7 @@
 <body id="backpage">
     <div class="<?=$c->getPageWrapperClass()?>">
         <header>
-            <nav class="navbar" role="navigation">
+            <nav class="navbar navbar-default" role="navigation">
                 <div class="container">
                     <div class="navbar-header">
                         <a class="navbar-brand" href="/">
