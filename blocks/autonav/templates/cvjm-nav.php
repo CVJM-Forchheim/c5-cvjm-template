@@ -77,9 +77,13 @@ foreach ($navItems as $ni) {
 	}
 	*/
 
-	if ($ni->hasSubmenu) {
+	if ($ni->hasSubmenu && $ni->level == 1) {
 		//class for items that have dropdown sub-menus
 		$classes[] = 'dropdown';
+	}
+
+	if ($ni->hasSubmenu && $ni->level > 1) {
+		$classes[] = 'dropdown-header';
 	}
 
 	/*
@@ -109,24 +113,39 @@ foreach ($navItems as $ni) {
 //*** Step 2 of 2: Output menu HTML ***/
 
 echo '<ul class="nav navbar-nav">'; //opens the top-level menu
-
+$lastLevel = 1;
 foreach ($navItems as $ni) {
+	if ($lastLevel > $ni->level) {
+		if ($ni->level == 1) {
+			echo '</ul></li>';
+		} else {
+			echo '<li role="separator" class="divider"></li>';
+		}
+	}
 
 	echo '<li class="' . $ni->classes . '">'; //opens a nav item
 
 
-	if ($ni->hasSubmenu) {
+	if ($ni->hasSubmenu && $ni->level == 1) {
 		echo '<a href="' . $ni->url . '" target="' . $ni->target . '" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">' . $ni->name . '</a>';
 	} else {
-		echo '<a href="' . $ni->url . '" target="' . $ni->target . '" class="' . $ni->classes . '">' . $ni->name . '</a>';
+		if (!$ni->hasSubmenu) {
+			echo '<a href="' . $ni->url . '" target="' . $ni->target . '" class="' . $ni->classes . '">' . $ni->name . '</a>';
+		} else {
+			echo $ni->name;
+		}
 	}
 
-	if ($ni->hasSubmenu) {
+	if ($ni->hasSubmenu && $ni->level == 0) {
 		echo '<ul class="dropdown-menu" role="menu">'; //opens a dropdown sub-menu
 	} else {
 		echo '</li>'; //closes a nav item
-		echo str_repeat('</ul></li>', $ni->subDepth); //closes dropdown sub-menu(s) and their top-level nav item(s)
 	}
+
+	$lastLevel = $ni->level;
+}
+if ($lastLevel > 1) {
+	echo '</ul></li>';
 }
 
 echo '</ul>'; //closes the top-level menu
