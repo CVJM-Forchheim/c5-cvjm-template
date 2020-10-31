@@ -1,12 +1,12 @@
 <?php defined( 'C5_EXECUTE') or die(_( "Access Denied.")); ?>
         </div>
         <div id="bottom">
+            <?php
+                $a = new GlobalArea('Footer');
+                $a->enableGridContainer();
+                $a->display($c);
+            ?>
             <div class="container dark hidden-print">
-                <?php
-                    $a = new GlobalArea('Footer');
-                    $a->enableGridContainer();
-                    $a->display($c);
-                ?>
                 <div class="row">
                     <?php
                         $a = new GlobalArea('Social');
