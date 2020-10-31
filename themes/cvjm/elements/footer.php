@@ -2,6 +2,11 @@
         </div>
         <div id="bottom">
             <div class="container dark hidden-print">
+                <?php
+                    $a = new GlobalArea('Footer');
+                    $a->enableGridContainer();
+                    $a->display($c);
+                ?>
                 <div class="row">
                     <?php
                         $a = new GlobalArea('Social');
