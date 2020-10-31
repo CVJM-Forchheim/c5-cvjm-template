@@ -6,6 +6,8 @@
                 $a->enableGridContainer();
                 $a->display($c);
             ?>
+        </div>
+        <div>
             <div class="container dark hidden-print">
                 <div class="row">
                     <?php
