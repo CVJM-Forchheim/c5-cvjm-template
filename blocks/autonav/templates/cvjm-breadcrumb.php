@@ -1,6 +1,6 @@
 <?php defined('C5_EXECUTE') or die("Access Denied.");
 
-$navItems = $controller->getNavItems();
+$navItems = $controller->getNavItems(true);
 
 /**
  * The $navItems variable is an array of objects, each representing a nav menu item.
