@@ -1,34 +1,36 @@
 <?php
-namespace Concrete\Package\Cvjmtemplate;
-use Package;
-use PageTheme;
+
+namespace Concrete\Package\CvjmTemplate;
+
+use Concrete\Core\Package\Package;
+use Concrete\Core\Page\Theme\Theme;
+use Concrete\Package\CvjmTemplate\Theme\Cvjm\PageTheme;
+
 defined('C5_EXECUTE') or die(_("Access Denied."));
 
-class Controller extends Package {
+class Controller extends Package
+{
 
-     protected $pkgHandle = 'cvjmTemplate';
+     protected $pkgHandle = 'cvjm_template';
      protected $appVersionRequired = '8.4.0';
-     protected $pkgVersion = '4.0';
+     protected $pkgVersion = '5.0';
 
-     public function getPackageDescription() {
+     public function getPackageDescription()
+     {
           return t("Template mit CVJM-look.");
      }
 
-     public function getPackageName() {
+     public function getPackageName()
+     {
           return t("CVJM Template");
      }
 
-     public function install() {
+     public function install()
+     {
           $pkg = parent::install();
 
+          Theme::add('cvjm', $pkg);
           PageTheme::add('cvjm-nav', $pkg);
           PageTheme::add('cvjm-breadcrumb', $pkg);
      }
-
-     public function upgrade(){
-		$pkg = Package::getByHandle('cvjm');
-
-		parent::upgrade($pkg);
-	}
 }
-?>
