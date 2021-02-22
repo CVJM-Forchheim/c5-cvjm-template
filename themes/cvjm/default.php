@@ -8,9 +8,11 @@
         ?>
     </div>
 </div>
-<?php
-$a = new Area('Main');
-$a->enableGridContainer();
-$a->display($c);
-?>
+<div class="container">
+    <?php
+    $a = new Area('Main');
+    $a->enableGridContainer();
+    $a->display($c);
+    ?>
+</div>
 <?= $view->inc('elements/footer.php'); ?>
