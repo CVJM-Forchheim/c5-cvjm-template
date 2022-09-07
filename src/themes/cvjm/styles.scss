@@ -1,0 +1,93 @@
+body {
+    font-family: "Source Sans Pro", sans-serif;
+    background-color: #1c1c1c;
+  }
+  a:link,
+  a:visited {
+    text-decoration: none;
+  }
+  header a {
+    color: #211e1f;
+  }
+  nav {
+    background-color: #ffffff;
+    box-shadow: 0 3px 3px rgba(0, 0, 0, 0.4);
+  }
+  .navbar {
+    border-radius: 0px;
+    margin: 0px;
+  }
+  .navbar .icon-bar {
+    background-color: #000000;
+  }
+  .navbar-nav {
+    margin: 7px 0px;
+  }
+  .navbar-brand img {
+    height: 40px;
+  }
+  .navbar-toggle {
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+  .dropdown-menu li a.active {
+    background-color: #ff004d;
+  }
+  div#breadcrumb {
+    background-color: #f4e2d5;
+    a {
+      color: #211e1f;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+    li.active {
+      color: #e40038;
+    }
+    ol {
+      margin-bottom: 0px;
+      background-color: transparent;
+    }
+  }
+  div#main {
+    background-color: #ffffff;
+    background-image: url("/packages/cvjmTemplate/themes/cvjm/images/CVJM_Dreiecke_Hintergrund.gif");
+    .container {
+      background-color: #ffffff;
+      padding: 15px 36px;
+    }
+  }
+  div#bottom {
+    background-color: #e40038;
+    padding: 15px;
+    .container strong {
+      color: #ffffff;
+    }
+  }
+  div#footer {
+    background-color: #1c1c1c;
+    padding: 15px 0;
+    li {
+      display: inline-block;
+    }
+  }
+  .dark {
+    color: #ffffff;
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      color: #ffffff;
+    }
+    a {
+      &:link, &:visited {
+        color: #ffffff;
+        text-decoration: underline;
+      }
+      &:hover {
+        color: #777777;
+      }
+    }
+  }

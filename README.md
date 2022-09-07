@@ -1,7 +1,7 @@
 # CVJM Forchheim Template
-Concrete5 Bootstrap3 Template vom CVJM Forchheim.
+Concrete CMS Bootstrap5 Template for CVJM Forchheim.
 
-This template is developed for Concrete5 Version 8.4.0+
+This template is developed for Concrete CMS Version 9+.
 
 ## Demo
 You can see it in production on this site:
